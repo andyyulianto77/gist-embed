@@ -5,8 +5,8 @@ $(function(){
   var gistMarkerId = 'gist-';
   window.baseurl = '//gist.github.com';
 
-  //find all code elements containing "gist-" the id attribute.
-  $('code[id*="' + gistMarkerId + '"]').each(function(){
+  //find all codegistgist elements containing "gist-" the id attribute.
+  $('codegist[id*="' + gistMarkerId + '"]').each(function(){
     var $elem = $(this),
       id,
       url,
@@ -26,7 +26,7 @@ $(function(){
       data.file = file;
     }
 
-    //if the id doesn't begin with 'gist-', then ignore the code block
+    //if the id doesn't begin with 'gist-', then ignore the codegistgist block
     if (!id || id.indexOf('gist-') !== 0) return false;
 
     //make block level so loading text shows properly
